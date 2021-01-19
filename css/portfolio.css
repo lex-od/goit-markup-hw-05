@@ -17,12 +17,15 @@
 }
 
 .portfolio-btn {
-  border-style: none;
-  border-radius: 4px;
-
   padding: 6px 22px;
 
+  border-style: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--secondary-bg-color);
+  cursor: pointer;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -32,7 +35,6 @@
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--accent-color);
-  cursor: pointer;
 
   color: var(--primary-white-color);
 }
@@ -51,9 +53,11 @@
 }
 
 .portfolio-list-link {
-  text-decoration: none;
-
   display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-decoration: none;
 }
 
 .portfolio-list-link:hover,
